@@ -1,0 +1,70 @@
+<form (ngSubmit)="onSubmit()" #configForm="ngForm">
+  <h1>Real Time Event Ticketing System</h1>
+  <h2>Configuration Settings</h2>
+
+  <!-- Total Tickets -->
+  <mat-form-field>
+    <mat-label>Total Tickets</mat-label>
+    <input
+      matInput
+      type="number"
+      [(ngModel)]="totalTickets"
+      name="totalTickets"
+      required
+      #totalTicketsInput="ngModel"
+      min="1">
+    <mat-error *ngIf="totalTicketsInput.invalid && totalTicketsInput.touched">
+      Total Tickets must be a positive number.
+    </mat-error>
+  </mat-form-field>
+
+  <!-- Ticket Release Rate -->
+  <mat-form-field>
+    <mat-label>Ticket Release Rate</mat-label>
+    <input
+      matInput
+      type="number"
+      [(ngModel)]="ticketReleaseRate"
+      name="ticketReleaseRate"
+      required
+      #ticketReleaseRateInput="ngModel"
+      min="1">
+    <mat-error *ngIf="ticketReleaseRateInput.invalid && ticketReleaseRateInput.touched">
+      Ticket Release Rate must be a positive number.
+    </mat-error>
+  </mat-form-field>
+
+  <!-- Customer Retrieval Rate -->
+  <mat-form-field>
+    <mat-label>Customer Retrieval Rate</mat-label>
+    <input
+      matInput
+      type="number"
+      [(ngModel)]="customerRetrievalRate"
+      name="customerRetrievalRate"
+      required
+      #customerRetrievalRateInput="ngModel"
+      min="1">
+    <mat-error *ngIf="customerRetrievalRateInput.invalid && customerRetrievalRateInput.touched">
+      Customer Retrieval Rate must be a positive number.
+    </mat-error>
+  </mat-form-field>
+
+  <!-- Max Ticket Capacity -->
+  <mat-form-field>
+    <mat-label>Max Ticket Capacity</mat-label>
+    <input
+      matInput
+      type="number"
+      [(ngModel)]="maxTicketCapacity"
+      name="maxTicketCapacity"
+      required
+      #maxTicketCapacityInput="ngModel"
+      min="1">
+    <mat-error *ngIf="maxTicketCapacityInput.invalid && maxTicketCapacityInput.touched">
+      Max Ticket Capacity must be a positive number.
+    </mat-error>
+  </mat-form-field>
+
+  <button mat-button type="submit">Submit</button>
+</form>

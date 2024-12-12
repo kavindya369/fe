@@ -1,0 +1,33 @@
+.log-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loading {
+  font-size: 16px;
+  text-align: center;
+  color: #999;
+}
+
+.log-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.log-list li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}

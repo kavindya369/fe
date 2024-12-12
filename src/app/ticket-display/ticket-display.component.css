@@ -1,0 +1,47 @@
+.ticket-display {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.25rem;
+  color: #34495e;
+}
+
+strong {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .ticket-display {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  strong {
+    font-size: 1.25rem;
+  }
+}
